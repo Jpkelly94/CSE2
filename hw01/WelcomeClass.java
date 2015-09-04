@@ -2,7 +2,7 @@
 //John Kelly
 //August 29th, 2015
 
-public class Autobio {
+public class WelcomeClass {
     
     public static void main(String[] args) {
         

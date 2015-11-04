@@ -32,14 +32,11 @@ public class Shuffling{
       System.out.print(mycard[i]+" ");
     }
   }
-  
-   public static void shuffleList(String[] myCards) {
-    int [] x = new int[5];
-    String temp = ""; //empty string for swap
-    for (int j = 0; j < 80; j++) { //Shuffles the cards using a for-loop and random numbers. The number "80" is arbitrary; the deck shuffles 80 times 
+  public static void shuffleList(String[] myCard2) {
+    int x=0;
+    String temp = "";
+    for (int j = 0; j < 80; j++) {
       x = (int) (Math.random()*50)+1;
-      
-      //The next three lines swap temp with myCard2, with the purpose of making myCard2 equal to the values calculated above
       temp = myCard2[0];
       myCard2[0] = myCard2[x];
       myCard2[x] = temp;
@@ -49,7 +46,7 @@ public class Shuffling{
   public static String[] randomizeHand(String[] myList){
     String [] hand = new String[5];
     for (int k = 0; k < hand.length; k++) { //for loop draws five cards
-      hand[k] = myList[(int)(Math.random()*5)+1]
+      hand[k] = myList[(int)(Math.random()*5)+1];
       System.out.print(hand[k] + " ");
     }
     
